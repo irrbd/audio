@@ -1,0 +1,145 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+	html, body
+	{
+		height: 100%;
+	}
+	
+	.TTWForm
+	{
+		width: 600px;
+	}
+
+	.TTWForm-container 
+	{
+		color: #ddd;
+		background: #fff;
+		
+	}
+
+	.TTWForm-container h2 
+	{
+		margin-bottom: 0.8em;
+		color: #ddd;
+		font-weight: normal;
+	}
+
+
+	/** Field Styles **/
+	
+	.TTWForm .field, #form-title.field 
+	{
+		padding-bottom: 12px;
+		padding-top: 12px;
+		position: relative;
+		clear: both;
+	}
+
+	/** Field Widths */
+	
+
+	.f_100 
+	{
+		width: 100%;
+		display: inline;
+		float: left;
+		margin-left: 40%;
+		margin-right: 0%; /* jquery ui resize grid hack - not sure why */
+	}
+
+	.TTWForm input, .TTWForm textarea, .TTWForm select, div.selector, div.uploader  
+	{
+		width:100%;
+		
+		padding: 6px 0;
+		color: #999999;
+		border: 1px solid #d9d9d9;
+		outline: none;
+		display: inline-block;
+		position: relative;
+		z-index: 2;
+		box-shadow: 0 0 10px #eee inset;
+		-moz-box-shadow: 0 0 10px #eee inset;
+		-webkit-box-shadow: 0 0 10px #eee inset;
+		-ms-box-shadow: 0 0 10px #eee inset;
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-transition: .3s ease-in-out;
+		-moz-transition: .3s ease-in-out;
+	}
+
+
+	.TTWForm textarea 
+	{
+		overflow: hidden;
+	}
+
+	.TTWForm label 
+	{
+		color: #666;
+		text-align: left;
+	}	
+
+	.button-big
+	{
+		padding: 1.6em 4em;
+		font-size: 0.8em;
+		font-weight: 600;
+		color: #6F6F6F;
+	}
+	
+	.button:hover
+	{
+		color: #FFF;
+	}
+	
+	#onecolumn
+	{
+		float: left;
+		margin-top: 0em;
+		margin-left: 2.2em;
+        width: 750px
+	}
+	
+	#onecolumn .box-right
+	{
+		margin-right: -6em;
+		margin-top: 1em;
+		float: right;
+	}
+	
+	#onecolumn h1
+	{
+		margin-top: 0em;
+		margin-left: 0em;
+        width: 750px;
+		margin-bottom: 13em;
+		padding: 2em 0em 1em 0em;
+		letter-spacing: 0.10em;
+		font-size: 1.2em;
+		font-weight: 600;
+		color: #454445;
+		text-align: right;
+		
+	}
+	
+	#onecolumn h2
+	{
+		padding: 1em 0em 1em 0em;
+		letter-spacing: 0.10em;
+		text-transform: uppercase;
+		font-size: 1.2em;
+		font-weight: 600;
+		color: #454445;
+		text-align: right;
+		
+	}
+	
+	#onecolumn p
+	{
+		font-size: 1em;
+        text-align: justify;
+	}

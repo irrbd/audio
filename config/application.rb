@@ -22,5 +22,21 @@ module App2
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+    config.assets.precompile += %w(jquery-1.9.1.min)
+    config.assets.precompile += %w(owlcarousel)
+    config.assets.precompile += %w(slider )
+    config.assets.precompile += %w(bootstrap-collapse)
+    config.assets.precompile += %w(bootstrap-transition)
+    config.assets.precompile += %w(bootstrap-tab)
+    config.assets.precompile += %w(pretify)
+    config.assets.precompile += %w(application)
+
+config.assets.precompile += %w(contacts.css)
+config.assets.precompile += %w(default)
+config.assets.precompile += %w(fonts)
+config.assets.precompile += %w(owl.carousel)
+config.assets.precompile += %w(owl.theme)
+config.assets.precompile += %w(prettify)
+   
   end
 end

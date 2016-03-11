@@ -1,1 +1,105 @@
-<h1>Hello, Rails!</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" />
+
+<%= stylesheet_link_tag 'default.css' %>
+<%= stylesheet_link_tag 'fonts.css' %>
+<%= stylesheet_link_tag 'owl.carousel.css' %>
+<%= stylesheet_link_tag 'owl.theme.css' %>
+<%= stylesheet_link_tag 'prettify.css' %>
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">operly</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#" accesskey="1" title="">Главная</a></li>
+				<li><a href="#" accesskey="3" title="">Обратная связь</a></li>
+				<!-- <li><a href="#" accesskey="2" title="">Продукты</a></li>
+				<li><a href="#" accesskey="4" title="">Помощь</a></li> -->
+				<li class="current_page_item"><%= link_to 'Обратная связь', contacts_new_path %></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="featured">&nbsp;</div>
+<!--<div id="banner-wrapper">
+	<div id="banner" class="container">
+	<div class="box-left">
+		<h2>Задайте вопрос</h2>
+		<span>Свяжитесь с нами для получения детальной информации</span> </div> 
+		<div class="box-right"> <a href="#" class="button button-big">Список продуктов</a></div> 
+	</div>
+</div>-->
+<div id="wrapper">
+	<div id="page" class="container">
+		<div id="content">
+			<div id="onecolumn">
+			<div id="owl-demo" class="owl-carousel owl-theme">
+				<div class="item"><img src="/assets/images/pic01.PNG" alt="" class="image image-centered" /></div>
+				<div class="item"><img src="/assets/images/pic02.PNG" alt="" class="image image-centered"></div>
+				<div class="item"><img src="/assets/images/pic03.PNG" alt="" class="image image-centered" /></div>
+				<div class="item"><img src="/assets/images/pic04.PNG" alt="" class="image image-centered"></div>
+            </div>
+		    </div>
+	         <div id="sidebar">
+			  <ul class="style1">
+			    	<li class="first">
+						<h2>Модель OPERLY INTELLIGENCE</h2>
+						<p>Экстремально аудиофильская акустическая система рупорного типа, предназначенная для воспроизведения интеллектуальной музыки: классики, джаза, арт-рока, вокальной музыки и&nbsp;т.п. 
+						<br>Система представляет собой полный рупор (прямой и&nbsp;обратный), в&nbsp;модели OPERLY INTELLIGENCE полностью отсутствуют все реактивные элементы: разделительные фильтры, конденсаторы, катушки, дроссели и&nbsp;предрупорная камера, словом, все, что мешает звуку раскрыться и&nbsp;быть живым и&nbsp;естественным.</p>
+					</li>
+					<li>
+						<h2>Характеристики:</h2>
+						<div class="table">
+							<div id="td" class="table">
+								<table>
+								 <p><tr><td width="300">Диапазон</td><td width="300">60&nbsp;&mdash;18000&nbsp;Гц</td></tr>
+									<tr><td>Максимальная долговременная мощность</td><td>40&nbsp;Вт на&nbsp;канал</td></tr>
+									<tr><td>Неравномерность</td><td>&plusmn; 5&nbsp;Дб</td></tr>
+									<tr><td>Чувствительность</td><td>99&nbsp;Дб</td></tr></p>
+								</table>
+							</div>
+						</div>
+						<br>
+					</li>
+					<li>
+						<h2>Имеет ряд крайне редко встречающихся особенностей:</h2>
+						<p>&mdash;&nbsp;полный рупор (прямой и&nbsp;обратный);
+                        <br>&mdash;&nbsp;прямой рупор круглого сечения;
+                        <br>&mdash;&nbsp;обратный рупор имеет круглое сечение на&nbsp;70% длины, а&nbsp;оставшаяся часть лишь обрезана по&nbsp;бокам для уменьшения размеров, для удаления переотражений в&nbsp;обратном рупоре применена специальная система демпфирования препятствующая таким переотражениям, при этом основной сигнал распространяющийся вдоль обратного рупора проходит без искажений.
+						</p>
+					</li>
+			  </ul> 
+			  </div>
+		 
+		
+	</div>
+</div>
+</div>		
+ 
+<div id="copyright" class="container">
+	<p>&copy; Operly. Все права защищены.</p>
+</div>
+ <%= javascript_include_tag('jquery-1.9.1.min.js') %> 
+ <%= javascript_include_tag('owlcarousel.js') %> 
+ <%= javascript_include_tag('slider.js') %>   
+ <%= javascript_include_tag('bootstrap-collapse.js') %>   
+ <%= javascript_include_tag('bootstrap-transition.js') %>   
+ <%= javascript_include_tag('bootstrap-tab.js') %>  
+ <%= javascript_include_tag('pretify.js') %>  
+ <%= javascript_include_tag('application.js') %>  
+   
+</body>
+</html>
+
+

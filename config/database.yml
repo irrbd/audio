@@ -53,6 +53,8 @@ test:
 #
 production:
   <<: *default
-  database: app2_production
-  username: app2
-  password: <%= ENV['APP2_DATABASE_PASSWORD'] %>
+  adapter: mysql  
+  database: audio_operly50
+  host: mysql0.locum.ru
+  username: audio_operly50
+  password: "xB3QI7bt"

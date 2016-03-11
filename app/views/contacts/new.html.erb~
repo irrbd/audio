@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" />
+<%= stylesheet_link_tag 'contacts.css' %>
+<%= stylesheet_link_tag 'default.css' %>
+<%= stylesheet_link_tag 'fonts.css' %>
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">operly</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#" accesskey="1" title="">Главная</a></li>
+				<li><a href="#" accesskey="3" title="">Обратная связь</a></li>
+				<!-- <li><a href="#" accesskey="2" title="">Продукты</a></li>
+				<li><a href="#" accesskey="4" title="">Помощь</a></li> -->
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="featured">&nbsp;</div>
+<div id="wrapper">
+<div id="page" class="container">
+	
+<div id="content">
+<div id="onecolumn" class="container">			
+<h2>ЗАДАЙТЕ ИНТЕРЕСУЮЩИЙ ВАС ВОПРОС</h2>
+<div class="TTWForm-container">
+     
+ <div class="TTWForm">   		
+ <%= form_for @contact do |f| %>                  
+<div id="field1-container" class="field f_100">
+<label for="field1">
+												
+ <%= f.label :Имя %><br></label>
+ <%= f.text_field :name, required: true %>
+</div>
+ <br>
+<div id="field2-container" class="field f_100">
+<label for="field2">
+					
+ <%= f.label :Email %><br></label>
+ <%= f.email_field :email, required: true %>
+</div>
+ <br>
+<div id="field3-container" class="field f_100">
+<label for="field3">					
+ <%= f.label :Сообщение %><br></label>
+ <%= f.text_area :message, as: :text %>
+</div>
+</div>
+	<div class="box-right"> 
+ <%= f.submit 'Отправить', class: "button button-big" %>
+ </div>   
+<% end %>
+</div> 
+</div>
+	         
+</div>
+</div>		
+ </div>	
+</div>
+
+<div id="copyright" class="container">
+	<p>&copy; Operly. Все права защищены.</p>
+</div>
+</body>
+</html>
+
+
+
+
