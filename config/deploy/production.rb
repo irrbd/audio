@@ -45,11 +45,14 @@ role :db,  [connect_to]
 #
 # Global options
 # --------------
-#  set :ssh_options, {
+set :ssh_options, {
 #    keys: %w(/home/rlisowski/.ssh/id_rsa),
-#    forward_agent: false,
-#    auth_methods: %w(password)
-#  }
+    forward_agent: true,
+    auth_methods: %w(password),
+	password: 'Vt69iYkq',
+	user: 'hosting_audio'
+
+ }
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
