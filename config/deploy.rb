@@ -22,7 +22,7 @@ set :repo_url, "ssh://#{ $user }@#{ $server }/home/#{ $user }/git/#{ application
 set :deploy_to, deploy_to
 
 # Default value for :scm is :git
-# set :scm, :git
+set :scm, :git
 
 # Default value for :format is :pretty
 # set :format, :pretty
@@ -65,15 +65,4 @@ namespace :deploy do
     end
   end
 end
-#namespace :deploy do
 
-#  after :restart, :clear_cache do
-#    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
-#    end
-#  end
-
-#end

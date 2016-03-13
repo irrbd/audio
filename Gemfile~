@@ -31,7 +31,19 @@ gem 'mail_form', '~> 1.5.1'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+group :development do
+ gem 'capistrano' #,github: 'capistrano/capistrano', ref: '96a16'
+ gem 'capistrano-rails'
+ gem 'capistrano-bundler'
+ gem 'capistrano-rvm'
+ gem 'highline'
+ gem 'net-sftp'
+ gem 'net-ssh-gateway'
+end
+
+group :production do
+gem 'unicorn'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
