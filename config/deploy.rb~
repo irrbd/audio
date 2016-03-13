@@ -18,7 +18,7 @@ set :repo_url, "ssh://#{ $user }@#{ $server }/home/#{ $user }/git/#{ application
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, '/var/www/my_app_name'
+set :deploy_to, deploy_to
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -39,7 +39,7 @@ set :pty, true
 # set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
 # Default value for default_env is {}
-set :default_env, { path: "/usr/local/rvm/gems/ruby-2.1.5/bin:/usr/local/rvm/gems/ruby-2.1.5@global/bin:/usr/local/rvm/rubies/ruby-2.1.5/bin:/usr/local/rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games" }
+set :default_env, { path: '/usr/local/rvm/gems/ruby-2.1.5/bin:/usr/local/rvm/gems/ruby-2.1.5@global/bin:/usr/local/rvm/rubies/ruby-2.1.5/bin:/usr/local/rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games' }
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
