@@ -31,7 +31,7 @@ module App2
     config.assets.precompile += %w(pretify)
     config.assets.precompile += %w(application)
 
-config.assets.precompile += %w(contacts)
+config.assets.precompile += %w(contacts.css)
 config.assets.precompile += %w(default)
 config.assets.precompile += %w(fonts)
 config.assets.precompile += %w(owl.carousel)
