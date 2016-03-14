@@ -42,5 +42,5 @@ config.assets.precompile += %w(prettify)
 end
 
 
-config.secret_key_base = 'production rake secret
-0d0707430097eecc8e4410feade5fd63a752a64c36b200e1b1539ba40274b4e11bf36a1999a1e64cb16481e77a7e930ba83b39cc1b23ac9b3faaa585cfef24bc'
+#config.secret_key_base = 'production rake secret
+#0d0707430097eecc8e4410feade5fd63a752a64c36b200e1b1539ba40274b4e11bf36a1999a1e64cb16481e77a7e930ba83b39cc1b23ac9b3faaa585cfef24bc'
