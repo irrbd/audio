@@ -183,6 +183,7 @@ DEPENDENCIES
   mail_form (~> 1.5.1)
   mysql (~> 2.9.1)
   rails (= 4.2.5.1)
+  rake
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
