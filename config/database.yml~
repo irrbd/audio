@@ -54,7 +54,7 @@ test:
 production:
   <<: *default
   adapter: mysql  
-  database: gb_operly
-  host: mysql90.1gb.ru
-  username: gb_operly
-  password: "79b8f34aa9a"
+  database: likor_operly92
+  host: mysql0.locum.ru
+  username: likor_operly92
+  password: "5fP5WWAQt3"

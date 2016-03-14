@@ -54,7 +54,7 @@ test:
 production:
   <<: *default
   adapter: mysql  
-  database: audio_operly50
+  database: likor_operly92
   host: mysql0.locum.ru
-  username: audio_operly50
-  password: "xB3QI7bt"
+  username: likor_operly92
+  password: "5fP5WWAQt3"
